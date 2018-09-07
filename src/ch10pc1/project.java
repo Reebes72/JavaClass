@@ -4,7 +4,6 @@ import java.util.ArrayList;
 public class project {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 			ProductionWorker worker1 = new ProductionWorker("Lonnie Vance", "123-A", "04-01-2004", 1, 12.50);
 			ProductionWorker worker2 = new ProductionWorker("Harold Stephens", "232-F", "03-21-2014");
 			ProductionWorker worker3 = new ProductionWorker("Max Francisco", "777-G", "05-11-2018" , 2, -4.00);
