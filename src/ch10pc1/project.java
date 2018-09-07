@@ -11,7 +11,7 @@ public class project {
 			ProductionWorker worker4 = new ProductionWorker("Cheryl Clements", "923-K", "07-28-2016", 2, 24);
 			ProductionWorker worker5 = new ProductionWorker("Alisha Meadows", "887-A", "08-08-2008", 1, 20.3333333);
 			
-			ArrayList<ProductionWorker> list = new ArrayList<>();
+			ArrayList<Employee> list = new ArrayList<>();
 			
 			list.add(worker1);
 			list.add(worker2);
@@ -19,13 +19,13 @@ public class project {
 			list.add(worker4);
 			list.add(worker5);
 
-			for(ProductionWorker var: list) {
+			for(Employee var: list) {
 				System.out.println("Worker: ");
 				System.out.println("Name: " + var.getName());
 				System.out.println("Employee Number: " + var.getNumber());
 				System.out.println("Hire Date: " + var.getDate());
-				System.out.println("Work Shift: " + var.getShift());
-				System.out.printf("Pay Rate: %,.2f\n", var.getPayRate());
+				System.out.println("Work Shift: " + ((ProductionWorker) var).getShift());
+				System.out.printf("Pay Rate: %,.2f\n", ((ProductionWorker) var).getPayRate());
 			}
 			
 					
