@@ -21,6 +21,7 @@ public class LandTractTest {
 	}
 	public static LandTract createTract() {
 		Scanner keyboard = new Scanner(System.in);
+
 		System.out.println("Enter width of tract of land.");
 		double width = keyboard.nextDouble();
 		System.out.println("Enter length of tract of land.");
