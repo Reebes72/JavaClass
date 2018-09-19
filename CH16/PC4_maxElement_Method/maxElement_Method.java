@@ -9,6 +9,8 @@ public class maxElement_Method {
 	}
 	
 	public static int maxElement(int[] array, int index, int max) {
+		//Method brings in the array for traversal, the indexing to be incremented
+		//And the max value
 		if(index == array.length) {
 			return max;
 		}
@@ -17,6 +19,7 @@ public class maxElement_Method {
 		}
 		index++;
 		return maxElement(array, index, max);
+		
 	}
 
 }
