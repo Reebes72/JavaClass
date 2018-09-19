@@ -19,7 +19,7 @@ public class maxElement_Method {
 		}
 		index++;
 		return maxElement(array, index, max);
-		
+		//returns max
 	}
 
 }
