@@ -22,11 +22,13 @@ public class CharacterCounter {
 	}
 	/**
 	 * Method iterates through a char array, searching for a specific character
-	 * It returns the number of times it finds the character
-	 * @param array
-	 * @param character
-	 * @param index
-	 * @return
+	 * It returns the number of times it finds the character.
+	 * Base Case is reaching the end of the array
+	 * 
+	 * @param array 	The character array.
+	 * @param character The character being searched for.
+	 * @param index		Should be 0. specifies the index of the array
+	 * @return 			Returns number of times the character appears.
 	 */
 public static int Counter(char[] array, char character, int index) {
 	if(index == array.length) {
