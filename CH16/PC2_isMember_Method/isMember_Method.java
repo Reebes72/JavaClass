@@ -15,7 +15,9 @@ public class isMember_Method {
 		System.out.println(isMember(array, 0, 0));
 
 	}
-	
+	public static boolean isMember(int[] array, int value) {
+		return isMember(array, value, 0);
+	}
 	public static boolean isMember(int[] array, int value, int index) {
 		
 		if(index == array.length) {
