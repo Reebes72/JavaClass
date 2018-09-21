@@ -14,6 +14,7 @@ public class Recursive_Power_Method {
 		System.out.println(PowerMethod(10,6));
 		System.out.println(PowerMethod(2,16));
 		System.out.println(PowerMethod(1,10000));
+		System.out.println(PowerMethod(4, 8));
 		//If you try to do 100000 you throw so many errors you can't even see the whole Stack Trace
 		
 
