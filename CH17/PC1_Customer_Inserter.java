@@ -22,6 +22,7 @@ public class PC1_Customer_Inserter {
 			ResultSet result = stmt.executeQuery("SELECT * FROM Customer");
 			ResultSetMetaData meta = result.getMetaData();
 			
+			//Display Results of table
 			while(result.next())
 			{
 				for(int i = 1; i <= meta.getColumnCount(); i++)
@@ -59,10 +60,10 @@ public class PC1_Customer_Inserter {
 	 */
 	 
 	public static String customerStatement(String name, 
-										   String address, 
-										   String city, 
-										   String state, 
-										   String zip) 
+										  String address, 
+										  String city, 
+										  String state, 
+										  String zip) 
 	{
 		//Generate random Customer Number
 		Random rand = new Random();
@@ -131,8 +132,7 @@ public class PC1_Customer_Inserter {
 		System.out.println("Zip: ");
 		input[4] = keyboard.nextLine();
 		
-		String stmt = customerStatement(input);
-		return stmt;
+		return customerStatement(input);
 		
 	}
 	
